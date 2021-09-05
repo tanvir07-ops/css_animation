@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe and animation</title>
+    <style>
+        body{
+            background-color:#02B875;
+           
+        }
+
+        .box {
+        background: white;
+        width: 200px;
+        height: 200px;
+        position:relative;
+        
+        animation-name: animate1;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+       
+        animation-timing-function:ease-in;
+
+
+        /* eikhane ease-in hocceh aste suru hoye thn jore cholbe
+        and ease-out er manse hosse first e jore cholbe then aste cholbe */
+       
+        /* animation-delay: 2s; */
+        /* animation-direction: alternate; */
+        /* animation-timing-function: ease-in-out; */
+      }
+
+      @keyframes animate1 {
+        
+        from{
+            top:0;
+        }
+        to {
+          width: 600px;
+          background-color: #212529;
+          top:2rem;
+          left:2rem;
+          right:2rem;
+
+          border-radius: 50%;;
+
+          
+        
+        }
+      }
+
+
+
+
+    </style>
+    
+      
+    
+</head>
+<body>
+
+    <div class="box">
+
+
+
+    </div>
+    
+</body>
+</html>
